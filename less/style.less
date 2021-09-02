@@ -1,0 +1,73 @@
+// out: ../css/style.css
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+
+header{
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(to left top, rgb(109, 109, 109), rgb(199, 198, 198));
+
+    nav{
+        min-height: 10vh;
+        margin: auto;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1,ul{
+            font-size: 1.5rem;
+            flex: 1;
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+
+            img{
+                width: 65px;
+                height: 50px;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+
+    .bubble{
+        position: absolute;
+        z-index: -2;
+        background: linear-gradient(to right bottom, rgb(70, 70, 70), rgb(134, 134, 134));
+        transform: none;
+        width: 70px;
+        height: 60px;
+        border-radius: 50%;
+    }
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 5rem;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
